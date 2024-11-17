@@ -14,6 +14,9 @@ import java.time.LocalTime;
 public class Suggestion {
 
     private int id;
+    private String userId;
+    private String userName;
+    private String movieName;
     private String description;
     private LocalDate date;
     private LocalTime time;

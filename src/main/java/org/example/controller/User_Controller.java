@@ -39,4 +39,9 @@ public class User_Controller {
     public User searchUserById(@PathVariable Integer id){
         return service.searchUserById(id);
     }
+
+    @GetMapping("/search-by-email/{email}")
+    public User searchUserByMail(@PathVariable String email){
+        return service.searchUserByMail(email);
+    }
 }

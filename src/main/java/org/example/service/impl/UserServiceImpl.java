@@ -45,4 +45,9 @@ public class UserServiceImpl implements UserService {
     public User searchUserById(Integer id) {
         return mapper.map(repository.findById(id),User.class);
     }
+
+    @Override
+    public User searchUserByMail(String email) {
+        return mapper.map(repository.findByEmail(email),User.class);
+    }
 }
